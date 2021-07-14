@@ -1,0 +1,113 @@
+<!DOCTYPE>
+<html>
+<header>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
+            <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.min.css">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <h1> Management Informatio System</h1>
+</header>
+
+<body>
+    
+
+    <div class="sidenav">
+  <form class="d-flex">
+        <input class="form-control" id="myInput" input type="search" onkeyup="myFunction()" placeholder="Search">
+            
+        <button class ="ionsearch">
+            <i class="ion-search"></i>
+             </button>
+      </form>
+    <ul class="list-group" id="myList">
+        
+        
+        
+        <div class="bt1" id="myDIV">
+        
+    <li><a class="btn1" href="#" >Create MIS</a></li>
+    <li> <a class="btn1" href="#">Search MIS</a></li>
+    <li> <a class="btn1" href="#">Generate MIS Report</a></li>
+    <li><a class="btn1 active" href="#">Established Intake</a></li>
+    <li><a class="btn1"  href="#">Faculty Count</a></li>
+    <li><a class="btn1" href="#">Student Count</a></li> 
+    <li><a class="btn1" href="#">Student Summary</a></li>
+    <li><a class="btn1" href="#">Student Ratio</a></li>
+    <li><a class="btn1" href="#">Class Attendance</a></li>
+    <li><a class="btn1" href="#">Result Analysis</a></li>
+    <li><a class="btn1" href="#">Syllabus Completion</a></li>
+    <li><a class="btn1" href="#">Test Activity</a></li>
+    <li><a class="btn1" href="#">projects</a></li>  
+    <li><a class="btn1" href="#">Training Conducted</a></li>
+    <li><a class="btn1" href="#">Training Planned</a></li>
+    <li><a class="btn1" href="#">Campus placement drives</a></li>
+    <li><a class="btn1" href="#">Upcoming Campus placement drives</a></li>
+    <li><a class="btn1" href="#">Companies/Organaization contacted</a></li> 
+    <li><a class="btn1" href="#">Co-curricular Activities</a></li>
+    <li><a class="btn1" href="#">Extra-curricular Activities</a></li>
+    <li><a class="btn1" href="#">Workshop/conference/Symposium/contests org.</a> </li>
+    <li><a class="btn1" href="#">Guest Lecture Organaized</a>  </li>
+    <li><a class="btn1" href="#">Industrial visits</a>  </li>
+    <li><a class="btn1" href="#">Training program/workshop attended_students</a></li>
+    <li><a class="btn1" href="#">Training program/workshop attended_teacher</a></li>
+    <li><a class="btn1" href="#">Technical paper_present/project_contest outside</a></li>
+    <li><a class="btn1" href="#">Achievements/Awards student</a></li>
+    <li><a class="btn1" href="#">Achievements/Awards teacher</a></li>
+    <li><a class="btn1" href="#">Meetings conducted stakeholders</a></li>
+    <li><a class="btn1" href="#">Social activity</a></li>
+    <li><a class="btn1" href="#">Efforts for Enhancing_admissions</a></li>
+    <li><a class="btn1" href="#">Interactive meeting on student</a></li>
+    <li><a class="btn1" href="#">Planned activity next_month</a></li>
+    <li><a class="btn1" href="#">LibraryInfo Books</a></li>
+    <li><a class="btn1" href="#">LibraryInfo journels</a></li>
+    <li><a class="btn1" href="#">Research and Development activity</a></li>
+    <li><a class="btn1" href="#">Research publications</a></li>
+ 
+           </div>
+            </ul>
+        
+
+
+<div class="main">
+  
+
+</div>
+
+<script>
+
+    //code for searching
+    
+   $(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+    
+    
+    //code for active links
+    var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("bt1");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+        </script>
+    </div>
+    </body>
+</html>
+        

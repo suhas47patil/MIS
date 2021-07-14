@@ -1,0 +1,128 @@
+<!DOCTYPE>
+<html>
+<header>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
+            <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.min.css">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</header>
+
+<style>
+    a:active {
+  background-color: yellow;
+}
+</style>
+
+
+<body>
+
+    <div class="sidenav">
+        
+        
+        <form class="d-flex">
+        <input class="form-control" id="myInput" input type="search" onkeyup="myFunction()" placeholder="Search">
+            
+        <button class ="ionsearch">
+            <i class="ion-search"></i>
+             </button>
+      </form>
+        
+        <ul class="list-group" id="myList">
+        
+            <div class="bt1" id="myDIV">
+        
+            <li><a href="create.html" target="iframe_b">Create MIS</a></li>
+            <li><a href="search.html" target="iframe_b">Search MIS</a></li>
+            <li><a href="generate_report.html" target="iframe_b">Generate MIS Report</a></li>
+            <li><a href="Est_intake.html" target="iframe_b">Established Intake</a></li>
+            <li><a href="faculty.html" target="iframe_b">Faculty Count</a></li>
+            <li><a href="student_count.html" target="iframe_b">Student Count</a></li>
+            <li><a href="Student_summary.html" target="iframe_b">Student Summary</a></li>
+            <li><a href="student_ratio.html" target="iframe_b">Student Ratio</a></li>
+            <li><a href="class_att.html" target="iframe_b">Class Attendance</a></li>
+            <li><a href="result_analysis.html" target="iframe_b">Result Analysis</a></li>
+            <li><a href="Syllabus_comple.html" target="iframe_b">Syllabus Completion</a></li>
+            <li><a href="test_activity.html" target="iframe_b">Test Activity</a></li>
+            <li><a href="training_activities_conducted.html" target="iframe_b">Training Conducted</a></li>
+            <li><a href="training_activities_planned.html" target="iframe_b">Training Planned</a></li>
+            <li><a href="campus_placement_drives.html" target="iframe_b">Campus placement drives</a></li>
+            <li><a href="Upcoming_Campus_placement.html" target="iframe_b">Upcoming Campus placement drives</a></li>
+            <li><a href="Companies_Org_contacted.html" target="iframe_b">Companies/Organaization contacted</a></li>
+            <li><a href="co_curricular.html" target="iframe_b">Co-curricular Activities</a></li>
+            <li><a href="extra_curricular.html" target="iframe_b">Extra-curricular Activities</a></li>
+            <li><a href="workshop.html" target="iframe_b">workshop/conference/Symposium/contests org.</a></li>
+            <li><a href="guest_lectured_org.html" target="iframe_b">Guest Lecture Organaized</a> </li>
+            <li><a href="industrial_visits.html" target="iframe_b">Industrial visits</a></li>
+            <li><a href="training_programs_attended_student.html" target="iframe_b">Training program/workshop attended_students</a></li>
+            <li><a href="training_programs_attended_teacher.html" target="iframe_b">Training program/workshop attended_teacher</a></li>
+            <li><a href="technical_paper_project_outside.html" target="iframe_b">Technical paper_present/project_contest outside</a></li>
+            <li><a href="achievements_awards_student.html" target="iframe_b">Achievements/Awards student</a></li>
+            <li><a href="achievements_awards_teacher.html" target="iframe_b">Achievements/Awards teacher</a></li>
+            <li><a href="meetings_conduted_stakeholders.html" target="iframe_b">Meetings conducted stakeholders</a></li>
+            <li><a href="Social_activity.html" target="iframe_b">Social activity</a></li>
+            <li><a href="Efforsts_for_enhancing_admission.html" target="iframe_b">Efforts for Enhancing_admissions</a></li>
+            <li><a href="Interactive_meetings.html" target="iframe_b">Interactive meeting on student</a></li>
+            <li><a href="Planned_activities_next_mon.html" target="iframe_b">Planned activity next_month</a></li>
+            <li><a href="Library_info_books.html" target="iframe_b">LibraryInfo Books</a></li>
+            <li><a href="Library_info_journals.html" target="iframe_b">LibraryInfo journels</a></li>
+            <li><a href="Research_dev_activity.html" target="iframe_b">Research and Development activity</a></li>
+            <li><a href="research_publication.html" target="iframe_b">Research publications</a></li>
+        
+            </div>
+        </ul>
+<div class="main">
+  
+
+</div>
+        
+        <script>
+            
+            
+            
+          //code for searching
+    
+   $(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+    
+    
+    //code for active links
+    var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("bt1");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+ 
+             //Code for Textbox visible when checkbox is tick
+    function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+            
+            
+</script>
+        
+    </div>
+</body>
+</html>

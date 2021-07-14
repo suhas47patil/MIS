@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+<header>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
+            <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.min.css">
+            <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</header>
+<style>
+    h1 {
+    color:darkorange;
+    margin-top: 60px;
+    /*text-align:center;*/
+    margin-bottom: 40px;
+    /*margin-left: 20%;*/
+    font-size: 250%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    /*font-weight:350;*/
+}
+
+    </style>
+
+<body>
+    <div>
+        <h1 align="center"><b>Management</b></h1>
+        <h1 align="center"><b>Information</b></h1>
+        <h1 align="center"><b>System</b></h1>
+        <h1 align="center"><b>(MIS)</b></h1>
+    </div>
+
+    <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    </script>
+
+</body>
+</html>
